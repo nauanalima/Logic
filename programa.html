@@ -2,6 +2,19 @@
 
 <script>
 
+    function pulaLinha() {
+
+        document.write("<br><br><br>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+
+    }
+
     var ano, nauana, alexandre, jean, media;
     ano = 2018;
     nauana = ano - 1992;
@@ -9,10 +22,10 @@
     jean = ano - 1989;
     media = (nauana + alexandre + jean)/3;
 
-    document.write("Nauana tem "+nauana+" anos.<br>");
-    document.write("Alexandre tem "+alexandre+" anos.<br>");
-    document.write("Jean tem "+jean+" anos.<br>");
-
-    document.write("<br>A média das idades é "+Math.round(media)+".");
+    mostra("Nauana tem "+nauana+" anos.<br>");
+    mostra("Alexandre tem "+alexandre+" anos.<br>");
+    mostra("Jean tem "+jean+" anos.<br>");
+    pulaLinha();
+    mostra("A média das idades é "+Math.round(media)+".");
 
 </script>
